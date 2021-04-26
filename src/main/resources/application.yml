@@ -1,0 +1,20 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: desafio-compasso-uol
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        driverClassName: com.mysql.cj.jdbc.Driver
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/desafio?allowPublicKeyRetrieval=true&sslMode=DISABLED
+    username: root
+    password: 45enef80khs1
+
