@@ -57,7 +57,7 @@ Este endpoint retorna uma lista de produtos.
 
 `GET /products/search?min_price=10.5&max_price=50&q=superget`
 
-Este endpoint retorna uma lista de contatos. Aceita algums parâmetros:
+Este endpoint retorna uma lista de produtos. Aceita algums parâmetros:
 
 `min_price` - o preço mínimo
 
@@ -71,7 +71,7 @@ Este endpoint retorna um produto especificado a partir do id informado.
 
 **Onde:**
 
-`id` - id do contato desejado.
+`id` - id do produto desejado.
 
 ### Tecnologias Utilizadass
 
