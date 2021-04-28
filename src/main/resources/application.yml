@@ -4,17 +4,19 @@ server:
 spring:
   application:
     name: desafio-compasso-uol
+  datasource:
+    url: jdbc:h2:mem:desafiodb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
   jpa:
-    show-sql: false
+    show-sql: true
     hibernate:
       ddl-auto: update
-    properties:
-      hibernate:
-        driverClassName: com.mysql.cj.jdbc.Driver
-        dialect: org.hibernate.dialect.MySQL8Dialect
+    database-platform: org.hibernate.dialect.H2Dialect
 
-  datasource:
-    url: jdbc:mysql://localhost:3306/desafio?allowPublicKeyRetrieval=true&sslMode=DISABLED
-    username: root
-    password: 45enef80khs1
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/desafio?allowPublicKeyRetrieval=true&sslMode=DISABLED
+#    username: root
+#    password: 45enef80khs1
 
