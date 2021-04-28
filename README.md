@@ -73,13 +73,14 @@ Este endpoint retorna um produto especificado a partir do id informado.
 
 `id` - id do produto desejado.
 
-### Tecnologias Utilizadass
+### Tecnologias Utilizadas
 
 Este projeto foi desenvolvida com as ferramentas:
 
 * **Java 11**
 * **Maven**
 * **Swagger**
+* **H2 Database**
 
 ### Testes
 
