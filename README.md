@@ -81,6 +81,7 @@ Este projeto foi desenvolvida com as ferramentas:
 * **Maven**
 * **Swagger**
 * **H2 Database**
+* **Junit**
 
 ### Testes
 
