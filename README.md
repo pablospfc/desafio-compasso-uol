@@ -81,6 +81,14 @@ Este projeto foi desenvolvida com as ferramentas:
 * **Maven**
 * **Swagger**
 
+### Testes
+
+* Para execução de testes unitários:
+
+```bash
+mvn test
+```
+
 ### Execução
 
 Para executar a API, simplesmente execute:
