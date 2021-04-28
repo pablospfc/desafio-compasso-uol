@@ -15,8 +15,4 @@ spring:
       ddl-auto: update
     database-platform: org.hibernate.dialect.H2Dialect
 
-#  datasource:
-#    url: jdbc:mysql://localhost:3306/desafio?allowPublicKeyRetrieval=true&sslMode=DISABLED
-#    username: root
-#    password: 45enef80khs1
 
