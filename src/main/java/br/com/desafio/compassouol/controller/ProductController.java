@@ -1,7 +1,6 @@
 package br.com.desafio.compassouol.controller;
 
 import br.com.desafio.compassouol.entity.Product;
-import br.com.desafio.compassouol.exceptions.ProductNotFound;
 import br.com.desafio.compassouol.rest.ErrorResponse;
 import br.com.desafio.compassouol.service.ProductService;
 import io.swagger.annotations.Api;
@@ -64,7 +63,7 @@ public class ProductController {
             @ApiResponse(code = 500, message = "Ocorreu alguma exceção na aplicação")
     })
     @GetMapping(value = "/{id}")
-    public ResponseEntity<Product> getById(@PathVariable("id") Long id) throws ProductNotFound {
+    public ResponseEntity<Product> getById(@PathVariable("id") Long id) {
         Optional<Product> p = productService.getById(id);
 
         if (p.isEmpty()) {
@@ -108,7 +107,7 @@ public class ProductController {
             @ApiResponse(code = 500, message = "Ocorreu alguma exceção na aplicação")
     })
     @PutMapping(value = "/{id}")
-    public ResponseEntity<?> update(@Valid @RequestBody Product product, @PathVariable("id") Long id) throws ProductNotFound {
+    public ResponseEntity<?> update(@Valid @RequestBody Product product, @PathVariable("id") Long id) {
         Optional<Product> p = productService.getById(id);
 
         if (p.isEmpty()) {
@@ -138,7 +137,7 @@ public class ProductController {
     })
 
     @DeleteMapping(value = "/{id}")
-    public ResponseEntity<?> delete(@PathVariable("id") Long id) throws ProductNotFound {
+    public ResponseEntity<?> delete(@PathVariable("id") Long id) {
 
         Optional<Product> p = productService.getById(id);
 

@@ -1,7 +1,6 @@
 package br.com.desafio.compassouol.service;
 
 import br.com.desafio.compassouol.entity.Product;
-import br.com.desafio.compassouol.exceptions.ProductNotFound;
 import br.com.desafio.compassouol.repository.ProductRepository;
 import br.com.desafio.compassouol.rest.ErrorResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -75,7 +74,7 @@ public class ProductServiceImpl implements ProductService{
     }
 
     @Override
-    public void delete(Long id) throws ProductNotFound {
+    public void delete(Long id) {
         productRepository.deleteById(id);
     }
 }
